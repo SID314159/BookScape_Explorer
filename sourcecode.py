@@ -10,11 +10,11 @@ searchlist=["python","datascience","java","c programming", "sql",
             "thermodynamics","atoms","biology","magnetism", "chemical"] #default searchlist
 
 if "searchlist1" not in st.session_state: #user input searchlist
-    st.session_state.searchlist1=["python","datascience","java","c", "programming", "sql",
-            "c++", "programming", "HTML", "CSS", "javascript", "computer", "science", 
-            "physics", "blackhole", "artificial", "intelligence", "machine", "learning", "statistics",
-            "quantum", "computing", "probability", "calculus", "gravity", "arithmetics",
-            "geometry","Artificial", "General", "Intelligence", "tensorflow", "differential", "equations","embedded", "programming",
+    st.session_state.searchlist1=["python","datascience","java","c programming", "sql",
+            "c++ programming", "HTML", "CSS", "javascript", "computer science", 
+            "physics", "blackhole", "artificial intelligence", "machine learning", "statistics",
+            "quantum computing", "probability", "calculus", "gravity", "arithmetics",
+            "geometry","Artificial General Intelligence", "tensorflow", "differential equations","embedded programming",
             "thermodynamics","atoms","biology","magnetism", "chemical"]
 
 def datclt(searchkey):   #function to collect data and return dlist
@@ -28,7 +28,7 @@ def datclt(searchkey):   #function to collect data and return dlist
             url="https://www.googleapis.com/books/v1/volumes?"
             parameters={
                 "q": searchkey[j],
-                "key":"AIzaSyAlqinZpRTufEeF8zV0kxecdi6HasQQyKM",
+                "key":"AIzaSyAlqinZpRTufEeF8zV0kxecdi6HasQQyKMMD",
                 "startIndex":0,
                 "maxResults":40
             }
